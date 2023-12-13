@@ -1,0 +1,18 @@
+sudo docker build -t debian -f Dockerfile.debian  .
+sudo docker run debian
+
+sudo docker build -t ubuntu -f Dockerfile.ubuntu  .
+sudo docker run ubuntu
+
+sudo docker build -t fedora -f Dockerfile.fedora  .
+sudo docker run fedora
+
+sudo docker build -t mint -f Dockerfile.mint  .
+sudo docker run mint
+
+sudo docker build -t arch -f Dockerfile.arch  .
+sudo docker run arch
+
+sudo docker build -t opensuse -f Dockerfile.opensuse  .
+sudo docker run opensuse
+

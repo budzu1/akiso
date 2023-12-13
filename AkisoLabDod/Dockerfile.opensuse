@@ -1,0 +1,9 @@
+FROM opensuse/leap:latest
+
+WORKDIR /app
+
+COPY distro_det.sh dev_environment.sh ./
+
+RUN chmod +x dev_environment.sh
+
+CMD ["./dev_environment.sh"]

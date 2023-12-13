@@ -1,0 +1,55 @@
+/ Division with rest
+JUMP FUNCTION_MAIN
+
+VAR_X, DEC 0
+VAR_Y, DEC 0
+VAR_RESOULT, DEC 0
+VAR_I, DEC 0
+
+FUNCTION_MAIN,	  CLEAR / preparing for restart
+			  STORE VAR_I
+                    STORE VAR_RESOULT
+                    
+			  INPUT / loading the first number, must be possitive
+                    STORE VAR_X
+                    SKIPCOND 800
+                    HALT
+
+                    INPUT / loading the second number, must be possitive
+                    STORE VAR_Y
+                    SKIPCOND 800
+                    HALT
+                    
+                    LOAD VAR_X
+                    STORE VAR_RESOULT
+                    JUMP FUNCTION_STEP_SUB
+              
+                
+FUNCTION_STEP_SUB,  LOAD VAR_RESOULT
+					SUBT VAR_Y
+					
+                    SKIPCOND 000
+                    JUMP LABEL_LOOP_CHANGE
+					JUMP LABEL_OUTPUT
+                    
+                    
+LABEL_LOOP_CHANGE,  STORE VAR_RESOULT
+                    LOAD VAR_I
+                    ADD CONSTATNT_1
+					STORE VAR_I
+					
+                    JUMP FUNCTION_STEP_SUB
+                    
+                    
+LABEL_OUTPUT, 	  LOAD VAR_I
+                    OUTPUT
+
+                    LOAD VAR_RESOULT
+                    OUTPUT
+                    
+                    HALT
+
+
+
+
+CONSTATNT_1, DEC 1
