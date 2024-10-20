@@ -1,5 +1,0 @@
-/home/tomasz/Desktop/zad4test/cooo/co.txt
-/home/tomasz/Desktop/zad4test/cosinnego.txt
-/home/tomasz/Desktop/zad4test/co.txt
-/home/tomasz/Desktop/zad4test/cooo/cpy_co.txt
-/home/tomasz/Desktop/zad4test/cooo/cosinnego.txt
